@@ -1,0 +1,21 @@
+---
+- name: This sets up an httpd webserver
+  hosts: all
+  become: yes
+  tasks:
+  - name: Install apache packages 
+    yum:
+      name: httpd
+      state: present
+  - name: Install Java packages
+    yum:
+      name: java-1.8.0-openjdk.x86_64 
+      state: present
+  - name: ensure httpd is running
+    service:
+      name: httpd 
+      state: started
+  - name: copy artifacts to remote host
+    copy: 
+     src=/var/lib/jenkins/workspace/java-maven-junit-helloworld/target/site/jacoco-both/ 
+     dest=/var/www/html/

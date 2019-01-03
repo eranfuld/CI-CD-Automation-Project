@@ -1,0 +1,179 @@
+Started by user [8mha:////4KjGU2l2pWXtl+z2DAvifDNy/FTgehywdM8ZcDrdKchyAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Building in workspace /var/lib/jenkins/workspace/java-maven-junit-helloworld
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/eranfuld/java-maven-junit-helloworld.git # timeout=10
+Fetching upstream changes from https://github.com/eranfuld/java-maven-junit-helloworld.git
+ > git --version # timeout=10
+ > git fetch --tags --progress https://github.com/eranfuld/java-maven-junit-helloworld.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 9e489de2e27fae2935f4b6a8eed19b90ea4be9eb (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 9e489de2e27fae2935f4b6a8eed19b90ea4be9eb
+Commit message: "Fix Markdown syntax error"
+ > git rev-list --no-walk 9e489de2e27fae2935f4b6a8eed19b90ea4be9eb # timeout=10
+[java-maven-junit-helloworld] $ mvn clean test install package
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building java-maven-junit-helloworld 2.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-install-plugin/2.3.1/maven-install-plugin-2.3.1.pom
+3/5 KB   5/5 KB            Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-install-plugin/2.3.1/maven-install-plugin-2.3.1.pom (5 KB at 6.3 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-install-plugin/2.3.1/maven-install-plugin-2.3.1.jar
+3/23 KB   5/23 KB   8/23 KB   11/23 KB   13/23 KB   16/23 KB   19/23 KB   21/23 KB   23/23 KB              Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-install-plugin/2.3.1/maven-install-plugin-2.3.1.jar (23 KB at 104.8 KB/sec)
+[INFO] 
+[8mha:////4HqvUl711Od0SwC2fZXLgCNeMOQvony6SIEpxAVttvIlAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-clean-plugin:2.4.1:clean (default-clean) @ java-maven-junit-helloworld ---
+[INFO] Deleting /var/lib/jenkins/workspace/java-maven-junit-helloworld/target
+[INFO] 
+[8mha:////4HqvUl711Od0SwC2fZXLgCNeMOQvony6SIEpxAVttvIlAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- jacoco-maven-plugin:0.8.1:prepare-agent (jacoco-prepare-agent) @ java-maven-junit-helloworld ---
+[INFO] argLine set to -javaagent:/var/lib/jenkins/.m2/repository/org/jacoco/org.jacoco.agent/0.8.1/org.jacoco.agent-0.8.1-runtime.jar=destfile=/var/lib/jenkins/workspace/java-maven-junit-helloworld/target/jacoco.exec
+[INFO] 
+[8mha:////4HqvUl711Od0SwC2fZXLgCNeMOQvony6SIEpxAVttvIlAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ java-maven-junit-helloworld ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /var/lib/jenkins/workspace/java-maven-junit-helloworld/src/main/resources
+[INFO] 
+[8mha:////4HqvUl711Od0SwC2fZXLgCNeMOQvony6SIEpxAVttvIlAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ java-maven-junit-helloworld ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 2 source files to /var/lib/jenkins/workspace/java-maven-junit-helloworld/target/classes
+[INFO] 
+[8mha:////4HqvUl711Od0SwC2fZXLgCNeMOQvony6SIEpxAVttvIlAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ java-maven-junit-helloworld ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /var/lib/jenkins/workspace/java-maven-junit-helloworld/src/test/resources
+[INFO] 
+[8mha:////4HqvUl711Od0SwC2fZXLgCNeMOQvony6SIEpxAVttvIlAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ java-maven-junit-helloworld ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 4 source files to /var/lib/jenkins/workspace/java-maven-junit-helloworld/target/test-classes
+[INFO] 
+[8mha:////4HqvUl711Od0SwC2fZXLgCNeMOQvony6SIEpxAVttvIlAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ java-maven-junit-helloworld ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running com.example.javamavenjunithelloworld.HelloTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.086 s - in com.example.javamavenjunithelloworld.HelloTest
+[INFO] Running com.example.javamavenjunithelloworld.HelloAppTest
+Hello!
+I don't understand the parameter you passed me. Is it a number? Parameter was: [bicycle]
+Hello!
+Hello!
+Hello!
+Something went wrong: Parameter «times» should be a positive number no larger than 20.
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.869 s - in com.example.javamavenjunithelloworld.HelloAppTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] 
+[8mha:////4HqvUl711Od0SwC2fZXLgCNeMOQvony6SIEpxAVttvIlAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- jacoco-maven-plugin:0.8.1:prepare-agent (jacoco-prepare-agent) @ java-maven-junit-helloworld ---
+[INFO] argLine set to -javaagent:/var/lib/jenkins/.m2/repository/org/jacoco/org.jacoco.agent/0.8.1/org.jacoco.agent-0.8.1-runtime.jar=destfile=/var/lib/jenkins/workspace/java-maven-junit-helloworld/target/jacoco.exec
+[INFO] 
+[8mha:////4HqvUl711Od0SwC2fZXLgCNeMOQvony6SIEpxAVttvIlAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ java-maven-junit-helloworld ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /var/lib/jenkins/workspace/java-maven-junit-helloworld/src/main/resources
+[INFO] 
+[8mha:////4HqvUl711Od0SwC2fZXLgCNeMOQvony6SIEpxAVttvIlAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ java-maven-junit-helloworld ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[8mha:////4HqvUl711Od0SwC2fZXLgCNeMOQvony6SIEpxAVttvIlAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ java-maven-junit-helloworld ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /var/lib/jenkins/workspace/java-maven-junit-helloworld/src/test/resources
+[INFO] 
+[8mha:////4HqvUl711Od0SwC2fZXLgCNeMOQvony6SIEpxAVttvIlAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ java-maven-junit-helloworld ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[8mha:////4HqvUl711Od0SwC2fZXLgCNeMOQvony6SIEpxAVttvIlAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ java-maven-junit-helloworld ---
+[INFO] Skipping execution of surefire because it has already been run for this configuration
+[INFO] 
+[8mha:////4HqvUl711Od0SwC2fZXLgCNeMOQvony6SIEpxAVttvIlAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-jar-plugin:2.3.2:jar (default-jar) @ java-maven-junit-helloworld ---
+[INFO] Building jar: /var/lib/jenkins/workspace/java-maven-junit-helloworld/target/java-maven-junit-helloworld-2.0-SNAPSHOT.jar
+[INFO] 
+[8mha:////4HqvUl711Od0SwC2fZXLgCNeMOQvony6SIEpxAVttvIlAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- jacoco-maven-plugin:0.8.1:prepare-agent-integration (jacoco-prepare-agent-integration) @ java-maven-junit-helloworld ---
+[INFO] argLine set to -javaagent:/var/lib/jenkins/.m2/repository/org/jacoco/org.jacoco.agent/0.8.1/org.jacoco.agent-0.8.1-runtime.jar=destfile=/var/lib/jenkins/workspace/java-maven-junit-helloworld/target/jacoco-it.exec
+[INFO] 
+[8mha:////4HqvUl711Od0SwC2fZXLgCNeMOQvony6SIEpxAVttvIlAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-failsafe-plugin:2.22.0:integration-test (default) @ java-maven-junit-helloworld ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running com.example.javamavenjunithelloworld.HelloWithTestsIT
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.075 s - in com.example.javamavenjunithelloworld.HelloWithTestsIT
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] 
+[8mha:////4HqvUl711Od0SwC2fZXLgCNeMOQvony6SIEpxAVttvIlAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-failsafe-plugin:2.22.0:verify (default) @ java-maven-junit-helloworld ---
+[INFO] 
+[8mha:////4HqvUl711Od0SwC2fZXLgCNeMOQvony6SIEpxAVttvIlAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- jacoco-maven-plugin:0.8.1:report (jacoco-report) @ java-maven-junit-helloworld ---
+[INFO] Loading execution data file /var/lib/jenkins/workspace/java-maven-junit-helloworld/target/jacoco.exec
+[INFO] Analyzed bundle 'java-maven-junit-helloworld' with 2 classes
+[INFO] 
+[8mha:////4HqvUl711Od0SwC2fZXLgCNeMOQvony6SIEpxAVttvIlAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- jacoco-maven-plugin:0.8.1:check (jacoco-check) @ java-maven-junit-helloworld ---
+[INFO] Loading execution data file /var/lib/jenkins/workspace/java-maven-junit-helloworld/target/jacoco.exec
+[INFO] Analyzed bundle 'java-maven-junit-helloworld' with 2 classes
+[INFO] All coverage checks have been met.
+[INFO] 
+[8mha:////4HqvUl711Od0SwC2fZXLgCNeMOQvony6SIEpxAVttvIlAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- jacoco-maven-plugin:0.8.1:merge (jacoco-merge) @ java-maven-junit-helloworld ---
+[INFO] Loading execution data file /var/lib/jenkins/workspace/java-maven-junit-helloworld/target/jacoco.exec
+[INFO] Loading execution data file /var/lib/jenkins/workspace/java-maven-junit-helloworld/target/jacoco-it.exec
+[INFO] Writing merged execution data to /var/lib/jenkins/workspace/java-maven-junit-helloworld/target/jacoco-both.exec
+[INFO] 
+[8mha:////4HqvUl711Od0SwC2fZXLgCNeMOQvony6SIEpxAVttvIlAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- jacoco-maven-plugin:0.8.1:report-integration (jacoco-integration) @ java-maven-junit-helloworld ---
+[INFO] Loading execution data file /var/lib/jenkins/workspace/java-maven-junit-helloworld/target/jacoco-it.exec
+[INFO] Analyzed bundle 'java-maven-junit-helloworld' with 2 classes
+[INFO] 
+[8mha:////4HqvUl711Od0SwC2fZXLgCNeMOQvony6SIEpxAVttvIlAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- jacoco-maven-plugin:0.8.1:report (jacoco-reportboth) @ java-maven-junit-helloworld ---
+[INFO] Loading execution data file /var/lib/jenkins/workspace/java-maven-junit-helloworld/target/jacoco-both.exec
+[INFO] Analyzed bundle 'java-maven-junit-helloworld' with 2 classes
+[INFO] 
+[8mha:////4HqvUl711Od0SwC2fZXLgCNeMOQvony6SIEpxAVttvIlAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ java-maven-junit-helloworld ---
+Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-digest/1.0/plexus-digest-1.0.pom
+2/2 KB              Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-digest/1.0/plexus-digest-1.0.pom (2 KB at 7.0 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-components/1.1.7/plexus-components-1.1.7.pom
+3/5 KB   5/5 KB            Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-components/1.1.7/plexus-components-1.1.7.pom (5 KB at 35.0 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-container-default/1.0-alpha-8/plexus-container-default-1.0-alpha-8.pom
+3/8 KB   5/8 KB   8/8 KB            Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-container-default/1.0-alpha-8/plexus-container-default-1.0-alpha-8.pom (8 KB at 49.6 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-digest/1.0/plexus-digest-1.0.jar
+3/12 KB   6/12 KB   9/12 KB   11/12 KB   12/12 KB              Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-digest/1.0/plexus-digest-1.0.jar (12 KB at 76.7 KB/sec)
+[INFO] Installing /var/lib/jenkins/workspace/java-maven-junit-helloworld/target/java-maven-junit-helloworld-2.0-SNAPSHOT.jar to /var/lib/jenkins/.m2/repository/com/example/java-maven-junit-helloworld/2.0-SNAPSHOT/java-maven-junit-helloworld-2.0-SNAPSHOT.jar
+[INFO] Installing /var/lib/jenkins/workspace/java-maven-junit-helloworld/pom.xml to /var/lib/jenkins/.m2/repository/com/example/java-maven-junit-helloworld/2.0-SNAPSHOT/java-maven-junit-helloworld-2.0-SNAPSHOT.pom
+[INFO] 
+[8mha:////4HqvUl711Od0SwC2fZXLgCNeMOQvony6SIEpxAVttvIlAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- jacoco-maven-plugin:0.8.1:prepare-agent (jacoco-prepare-agent) @ java-maven-junit-helloworld ---
+[INFO] argLine set to -javaagent:/var/lib/jenkins/.m2/repository/org/jacoco/org.jacoco.agent/0.8.1/org.jacoco.agent-0.8.1-runtime.jar=destfile=/var/lib/jenkins/workspace/java-maven-junit-helloworld/target/jacoco.exec
+[INFO] 
+[8mha:////4HqvUl711Od0SwC2fZXLgCNeMOQvony6SIEpxAVttvIlAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ java-maven-junit-helloworld ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /var/lib/jenkins/workspace/java-maven-junit-helloworld/src/main/resources
+[INFO] 
+[8mha:////4HqvUl711Od0SwC2fZXLgCNeMOQvony6SIEpxAVttvIlAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ java-maven-junit-helloworld ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[8mha:////4HqvUl711Od0SwC2fZXLgCNeMOQvony6SIEpxAVttvIlAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ java-maven-junit-helloworld ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /var/lib/jenkins/workspace/java-maven-junit-helloworld/src/test/resources
+[INFO] 
+[8mha:////4HqvUl711Od0SwC2fZXLgCNeMOQvony6SIEpxAVttvIlAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ java-maven-junit-helloworld ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[8mha:////4HqvUl711Od0SwC2fZXLgCNeMOQvony6SIEpxAVttvIlAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-surefire-plugin:2.22.0:test (default-test) @ java-maven-junit-helloworld ---
+[INFO] Skipping execution of surefire because it has already been run for this configuration
+[INFO] 
+[8mha:////4HqvUl711Od0SwC2fZXLgCNeMOQvony6SIEpxAVttvIlAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-jar-plugin:2.3.2:jar (default-jar) @ java-maven-junit-helloworld ---
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 12.003s
+[INFO] Finished at: Sun Dec 30 11:18:42 GMT-02:00 2018
+[INFO] Final Memory: 22M/58M
+[INFO] ------------------------------------------------------------------------
+Finished: SUCCESS

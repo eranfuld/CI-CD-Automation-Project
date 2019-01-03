@@ -1,0 +1,9 @@
+Started on Jan 3, 2019 9:29:00 AM
+Using strategy: Default
+[poll] Last Built Revision: Revision 1447ce1c13adcc8b2d380ea27e86185508abea07 (refs/remotes/origin/master)
+ > git --version # timeout=10
+ > git ls-remote -h https://github.com/eranfuld/java-maven-junit-helloworld.git # timeout=10
+Found 2 remote heads on https://github.com/eranfuld/java-maven-junit-helloworld.git
+[poll] Latest remote head revision on refs/heads/master is: 1447ce1c13adcc8b2d380ea27e86185508abea07 - already built by 15
+Done. Took 0.8 sec
+No changes

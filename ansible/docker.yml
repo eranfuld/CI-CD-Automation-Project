@@ -1,0 +1,29 @@
+---
+- name: This sets up a docker container
+  hosts: all
+  become: yes
+  tasks:
+  - name: Installing docker-ce prerequisite packages
+    yum:
+      name: yum-utils 
+      state: present
+    yum:
+      name: device-mapper-persistent-data 
+      state: present
+    yum:
+      name: lvm2 
+      state: present
+  - name: configuring docker-ce repo 
+    get_url:
+      url: https://download.docker.com/linux/centos/docker-ce.repo
+      dest: /etc/yum.repos.d/docker-ce.repo
+      mode: 0644
+  - name: Install docker packages 
+    yum:
+      name: docker
+      state: present
+  - name: starting and enabling docker service
+    service:
+      name: docker 
+      state: started
+      enabled: yes
