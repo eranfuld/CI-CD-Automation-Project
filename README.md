@@ -1,4 +1,4 @@
-CI/CD/Automation AWS/Docker Deployment Project
+CI/CD/Automation AWS EC2 INSTANCE EC2 Instance (Amazon Linux t2 micro)/Docker Deployment Project
 1.	The code has been “forked” 
 From: https://github.com/LableOrg/java-maven-junit-helloworld
 To: https://github.com/eranfuld/java-maven-junit-helloworld
@@ -38,13 +38,10 @@ The Jenkins job is uses a Poll SCM and triggered by the git repository users com
 
 a.	The build consists out of 5 stages: clean, test, verify, install, package (install also implement verify).
 b.	The next Jenkins job step is an execute shell Ansible Playbook that verifies the host’s availability. it uses Ansible’s “Ping Pong” function.
-c.	The next Jenkins job step is an execute shell Ansible Playbook that prepares the environment (AWS) for Jenkin’s artifacts (web-based report). The following steps are being done on the target host (AWS host, at this point the Docker container is still being developed): HTTPD is being installed -> java 8 is being installed -> HTTPD is being started -> the artifacts (web-based report) are being copied to the AWS host.
+c.	The next Jenkins job step is an execute shell Ansible Playbook that prepares the environment (AWS EC2 INSTANCE) for Jenkin’s artifacts (web-based report). The following steps are being done on the target host (AWS EC2 INSTANCE host, at this point the Docker container is still being developed): HTTPD is being installed -> java 8 is being installed -> HTTPD is being started -> the artifacts (web-based report) are being copied to the AWS EC2 INSTANCE host.
 d.	The next Jenkins job step is an execute shell Ansible Playbook that prepares the docker container (TBD). Currently the Ansible Playbook does the following in order to install and start Docker: install yum-utils -> install device-mapper-persistent-data -> install lvm2 -> configure the right yum repo -> install Docker -> start Docker. 
-
-TO-DO: 
-1.	run the container using the run command (downloading the HTTPD image if doesn’t exist locally) and make sure the container’s network interface is being bridged and port 80 is exposed. 
-2.	Copy the artifact to the container’s /var/www/html directory.
-3.	Run & test and verify
+e.	A new docker-deploy playbook has been added as an additional Jenkins job step-it creates a docker build using a Dockerfile, followed by the artifact copy into that same directory. A build and run are being launch, redirecting an exposed port 81 to an internal standard http port 80. 
 
 P.S
-The AWS deployment has been tested and verified.
+The AWS EC2 Instance deployment has been tested and verified.
+The Docker Container deployment has been tested and verified.

@@ -48,6 +48,9 @@
     <hudson.tasks.Shell>
       <command>sudo ansible-playbook /etc/ansible/docker.yml</command>
     </hudson.tasks.Shell>
+    <hudson.tasks.Shell>
+      <command>sudo ansible-playbook /etc/ansible/docker-deploy.yml</command>
+    </hudson.tasks.Shell>
   </builders>
   <publishers/>
   <buildWrappers/>
