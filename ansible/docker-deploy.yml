@@ -1,0 +1,21 @@
+---
+- name: This playbook creates and runs an httpd docker image 
+  hosts: docker-host
+  become: yes
+  tasks:
+  - name: Creates Docker Directory
+    file:
+      path: /docker/httpd 
+      state: directory
+  - name: Copy artifacts to the docker build directory
+    copy:
+     src=/var/lib/jenkins/workspace/java-maven-junit-helloworld/target/site/jacoco-both/
+     dest=/docker/httpd/
+  - name: Build the docker image using the Dockerfile
+    shell: docker build -t my-apache2 .
+    args: 
+      chdir: /docker/httpd
+  -name: Run the docker image using the Dockerfile 
+   shell: docker run -dit --name my-running-app -p 81:80 my-apache2
+   args:
+     chdir: /docker/httpd
